@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.primary-header {
+  text-align: center;
+  background-color: salmon;
+}
+
+.primary-footer {
+  text-align: center;
+  background-color: sandybrown;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #e5f7e8;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 75rem;
+  margin-inline: auto;
+  padding: 0 2rem;
+  flex: 1;
+}
