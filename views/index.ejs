@@ -3,17 +3,34 @@
 <main class="container-home">
   <div class="olaf"></div>
   <div class="form-container">
-    <form action="/queryAccount" method="POST">
-      <div class="form-group">
-        <label for="gameName">Game Name</label>
-        <input type="text" id="gameName" name="gameName" required />
+    <form action="/queryAccount" method="POST" class="query-acc-form">
+      <div class="form-group form-group-region">
+        <label for="Region">Region</label>
+        <select name="tagLine" id="tagLine" class="custom-select">
+          <option value="EUNE">EUNE</option>
+          <option value="EUW">EUW</option>
+          <option value="NA1">NA1</option>
+          <option value="ME1">ME1</option>
+          <option value="OCE">OCE</option>
+          <option value="KR1">KR1</option>
+          <option value="JP1">JP1</option>
+          <option value="RU1">RU1</option>
+        </select>
       </div>
       <div class="form-group">
-        <label for="tagLine">Tag Line</label>
-        <input type="text" id="tagLine" name="tagLine" required />
+        <label for="tagLine">Name</label>
+        <input
+          type="text"
+          class="game-name-input"
+          id="gameName"
+          name="gameName"
+          required
+        />
       </div>
       <div class="form-group">
-        <button type="submit">Submit</button>
+        <button type="submit" class="submit-btn">
+          <ion-icon name="search-outline"></ion-icon>
+        </button>
       </div>
     </form>
   </div>
