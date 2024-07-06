@@ -4,35 +4,94 @@
   box-sizing: border-box;
 }
 
-.primary-header {
-  text-align: center;
-  background-color: salmon;
-}
-
-.primary-footer {
-  text-align: center;
-  background-color: sandybrown;
+html {
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: #e5f7e8;
+  background-color: #0b1712;
 }
 
-.container {
+.container-home {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  max-width: 75rem;
+  align-items: center;
+  min-width: 100%;
   margin-inline: auto;
   padding: 0 2rem;
   flex: 1;
+  border: 1px solid red;
+}
+
+/* ========== HEADER ============ */
+/* ========== HEADER ============ */
+
+.primary-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #00a8e8;
+  min-height: 3rem;
+}
+
+/* ========== NAV ============ */
+/* ========== NAV ============ */
+
+.primary-nav {
+  display: flex;
+  align-items: center;
+  color: #e5e6e4;
+}
+
+.nav-list {
+  display: flex;
+  gap: 3rem;
+  list-style: none;
+}
+
+.nav-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ================== MAIN INDEX ================= */
+/* ================== MAIN INDEX ================= */
+
+.olaf {
+  background-image: url('/images/olaf.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 25rem;
+  width: 20rem;
+  margin: 1rem;
+}
+
+.ryze {
+  background-image: url('/images/prof-ryze.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 25rem;
+  width: 20rem;
+  margin: 1rem;
+}
+
+/* ========== FOOTER ============ */
+/* ========== FOOTER ============ */
+
+.primary-footer {
+  color: #e5e6e493;
+  text-align: center;
+  background-color: #0b1712;
+  border-top: 1px solid #e5e6e45e;
+  padding: 1rem;
 }
 
 .form-container {
   background-color: white;
+  max-width: 20rem;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);

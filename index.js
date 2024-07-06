@@ -17,10 +17,6 @@ app.get('/', (req, res) => {
   res.render('index.ejs');
 });
 
-app.get('/account', async (req, res) => {
-  res.render('getAccount.ejs');
-});
-
 app.post('/queryAccount', async (req, res) => {
   const gameName = req.body.gameName;
   const tagLine = req.body.tagLine;
