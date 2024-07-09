@@ -25,6 +25,16 @@ body {
   flex: 1;
 }
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.error-info {
+  color: #e5e6e4;
+  margin-bottom: 1rem;
+}
 /* ========== HEADER ============ */
 /* ========== HEADER ============ */
 
@@ -88,6 +98,9 @@ body {
   padding: 1rem;
 }
 
+/* ========== FORM ============ */
+/* ========== FORM ============ */
+
 .query-acc-form {
   display: flex;
   color: #e5e6e4;
@@ -118,6 +131,7 @@ body {
 }
 
 .custom-select {
+  position: relative;
   appearance: none;
   width: 100%;
   padding: 0.675em 6em 0.675em 1em;
@@ -128,6 +142,8 @@ body {
   font-weight: 700;
   cursor: pointer;
   outline: none;
+  -webkit-appearance: none; /* Safari */
+  -moz-appearance: none; /* Firefox */
 }
 
 .submit-btn {
